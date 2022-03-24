@@ -1,0 +1,22 @@
+<mvc:View
+    controllerName="isid.yconnecttoodata.controller.main"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="page" title="{i18n>title}">
+                    <content>
+                        <List id="_IDGenList1" items="{/studySet}" growing="true" growingScrollToLoad="true">
+                            <items>
+                                <ObjectListItem id="_IDGenObjectListItem1" type="Navigation" title="{id}" number="{name}" />
+                            </items>
+                        </List> 
+                    </content>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>
